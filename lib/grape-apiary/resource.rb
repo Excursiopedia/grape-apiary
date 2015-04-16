@@ -29,7 +29,7 @@ module GrapeApiary
       # TODO: ???
       route = routes.first
 
-      "#{title} #{route.route_type} [#{route.route_path_without_format}]"
+      "#{title} [#{route.route_path_without_format}]"
     end
 
     def sample_request
