@@ -9,7 +9,6 @@ module GrapeApiary
     def initialize(route, name, options)
       @full_name = name
       @name      = name
-      @name      = name.scan(/\[(.*)\]/).flatten.first if name.include?('[')
       @route     = route
       @settings  = parse_options(options)
     end
